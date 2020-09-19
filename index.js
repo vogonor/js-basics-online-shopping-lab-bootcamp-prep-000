@@ -59,12 +59,10 @@ function total() {
     }
 }
 
-function getItem(getCart(), item){
-  
-}
+
 function removeFromCart(item) { 
   
-     const found = cart.find(item => cart.itemName === item)
+     const found = cart.find(cart => cart.itemName === item)
      if(!found){
          return `That item is not in your cart.`
      }else {
